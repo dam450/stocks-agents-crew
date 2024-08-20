@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "stocks-crewai"
+version = "0.1.0"
+description = ""
+authors = ["Evandro <dam450@duck.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.12,<=3.13"
+yfinance = "0.2.41"
+crewai = {extras = ["tools"], version = "0.28.8"}
+langchain = "0.1.20"
+langchain-openai = "0.1.7"
+langchain-community = "0.0.38"
+duckduckgo-search = "5.3.0"
+streamlit = "1.37.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
